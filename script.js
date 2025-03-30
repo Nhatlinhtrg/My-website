@@ -1,12 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Example: Adding form submission confirmation
-    const form = document.querySelector('form');
-    form.addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-        alert("Thank you for your message! I'll get back to you soon.");
+// JavaScript for opening and closing sidebar
+function openNav() {
+    document.querySelector('.sidebar').classList.add('open');
+    document.querySelector('.main-content').style.marginLeft = "250px";
+}
 
-        // Reset form fields after submission
-        form.reset();
-    });
-});
-
+function closeNav() {
+    document.querySelector('.sidebar').classList.remove('open');
+    document.querySelector('.main-content').style.marginLeft = "0";
+}
