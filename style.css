@@ -7,12 +7,6 @@ body {
     color: #333;
 }
 
-h1 {
-    text-align: center;
-    font-size: 2.5em;
-    margin-top: 100px;
-}
-
 /* Sidebar Styles */
 .sidebar {
     height: 100%;
@@ -90,12 +84,28 @@ h1 {
     min-height: 100vh;
 }
 
-/* Image content */
-.content-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px 0;
+/* Background Image */
+.background-container {
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-text {
+    font-size: 3em;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Content Sections */
+section {
+    padding: 50px 0;
+    text-align: center;
 }
 
 /* Contact Form */
